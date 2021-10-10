@@ -11,7 +11,7 @@
   height: 1336px;
   background-size: 770px 1336px;
   background-repeat: no-repeat;
-  background-image: url(https://www.apple.com/v/iphone-12-pro/f/images/overview/5g/5g_on_phone__qxgc670fz2aa_large.jpg);
+  /*background-image: url(https://www.apple.com/v/iphone-12-pro/f/images/overview/5g/5g_on_phone__qxgc670fz2aa_large.jpg);*/
 }
 .mobile .screen {
   width: 770px;
@@ -27,7 +27,7 @@
   height: 200px;
   background-size: 650px 200px;
   background-repeat: no-repeat;
-  background-image: url(https://www.apple.com/v/iphone-12-pro/f/images/overview/5g/5g_top_ui__fh2pbo18aviq_large.jpg);
+  /*background-image: url(https://www.apple.com/v/iphone-12-pro/f/images/overview/5g/5g_top_ui__fh2pbo18aviq_large.jpg);*/
   position: relative;
   z-index: 3;
   margin: auto;
@@ -49,7 +49,7 @@
   height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(https://www.apple.com/v/iphone-12-pro/f/images/overview/5g/5g_show_04__dbzl203ndh2e_large.jpg);
+  /*background-image: url(https://www.apple.com/v/iphone-12-pro/f/images/overview/5g/5g_show_04__dbzl203ndh2e_large.jpg);*/
 }
 .mobile .screen .downloads .on {
   opacity: 1;
@@ -61,21 +61,24 @@
   height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(https://www.apple.com/v/iphone-12-pro/f/images/overview/5g/5g_show_01__bf4l35s1jn1e_large.jpg);
+  background: yellow;
+  /*background-image: url(https://www.apple.com/v/iphone-12-pro/f/images/overview/5g/5g_show_01__bf4l35s1jn1e_large.jpg);*/
 }
 .mobile .screen .downloads .on-2 {
   width: 730px;
   height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(https://www.apple.com/v/iphone-12-pro/f/images/overview/5g/5g_show_02__f7pxk2oyioeq_large.jpg);
+  background: blue;
+  /*background-image: url(https://www.apple.com/v/iphone-12-pro/f/images/overview/5g/5g_show_02__f7pxk2oyioeq_large.jpg);*/
 }
 .mobile .screen .downloads .on-3 {
   width: 730px;
   height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(https://www.apple.com/v/iphone-12-pro/f/images/overview/5g/5g_show_03__c8qgtrgvtno2_large.jpg);
+  background: red;
+  /*background-image: url(https://www.apple.com/v/iphone-12-pro/f/images/overview/5g/5g_show_03__c8qgtrgvtno2_large.jpg);*/
 }
 
 .content {
@@ -88,7 +91,7 @@
   padding: 20px;
   border-radius: 3px;
   background-color: white;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   position: relative;
   overflow: hidden;
 }
