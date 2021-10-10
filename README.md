@@ -1,4 +1,4 @@
-# homepage
+# GSAP ONE PAGE
 
 ## Build Setup
 
