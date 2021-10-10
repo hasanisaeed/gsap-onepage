@@ -1,0 +1,177 @@
+@font-face {
+  font-family: SFPro;
+  src: url(https://assets.codepen.io/3522775/SF-Pro-Display-Regular.otf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: SFPro, "Helvetica Neue";
+}
+
+body {
+  background-color: #101010;
+}
+
+.intro {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.intro__text {
+  margin: 0 auto;
+  width: 35%;
+  font-size: 30px;
+  text-align: center;
+}
+.intro__text-ios {
+  margin: 150px auto 0 auto;
+  font-size: 200px;
+  color: #333;
+}
+
+.outer {
+  width: 100%;
+  min-width: 861px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.device {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  margin-right: 60px;
+}
+
+.phone {
+  background: url("https://assets.codepen.io/3522775/ios14-2_1.png") no-repeat;
+  margin-left: auto;
+  height: 600px;
+  width: 303px;
+}
+
+.phone2 {
+  background: url("https://assets.codepen.io/3522775/ios14-3_1.png") no-repeat;
+}
+
+.phone3 {
+  background: url("https://assets.codepen.io/3522775/ios_screen_3_fallback__d5cqtmgnsweq_large_1.png") no-repeat;
+}
+
+.phone4 {
+  background: url("https://assets.codepen.io/3522775/ios14-1_1.png") no-repeat;
+}
+
+.text {
+  margin: 500px 0 150px 0;
+  width: 100%;
+  height: 100vh;
+}
+.text h1 {
+  opacity: 0;
+  width: 445px;
+  padding-bottom: 150px;
+  font-size: 40px;
+}
+.text h1:last-child {
+  padding-bottom: 70vh;
+}
+
+/* --------Social Icons-------- */
+/* Color Variables */
+/* Social Icon Mixin */
+.social-icons {
+  display: flex;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 0 0.7rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+.social-icon:hover {
+  color: #fff;
+}
+.social-icon:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -150%);
+}
+.social-icon:active {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+}
+.social-icon--twitter {
+  background: #2b97f1;
+  color: #fff;
+}
+.social-icon--twitter .tooltip {
+  background: #2b97f1;
+  color: currentColor;
+}
+.social-icon--twitter .tooltip:after {
+  border-top-color: #2b97f1;
+}
+.social-icon--codepen {
+  background: #000;
+  color: #fff;
+}
+.social-icon--codepen .tooltip {
+  background: #000;
+  color: currentColor;
+}
+.social-icon--codepen .tooltip:after {
+  border-top-color: #000;
+}
+.social-icon i {
+  position: relative;
+  top: 1px;
+}
+
+/* Tooltips */
+.tooltip {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 0.4rem 0.6rem;
+  border-radius: 40px;
+  font-size: 0.4rem;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  text-transform: uppercase;
+  transform: translate(-50%, -100%);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+.tooltip:after {
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  content: "";
+  border: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  transform: translate(-50%, 100%);
+}
