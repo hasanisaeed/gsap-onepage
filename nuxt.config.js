@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'homepage',
+    title: 'gsap one page',
     htmlAttrs: {
       lang: 'en'
     },
