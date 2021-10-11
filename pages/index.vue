@@ -1,11 +1,13 @@
 <template>
-  <div id="11">
+  <div >
     <div class="intro">
-      <h1 id="1" class="intro__text">Introducing the all-new iOS 14, iPadOS 14, and watchOS 7 and the entirely
-        reimagined macOS
-        Big Sur. Each massive update transforms the experience of using your favorite devices, giving you the power to
-        do more of the things you love like never before.</h1>
-      <h1 class="intro__text-ios">iOS</h1>
+      <h4  class="intro__text">
+        در شهریور 96، جمعی از نخبگان کارآفرینی، فناوری و لجستیک گرد هم آمدند و برای حل چالش های حمل و نقل جاده ای کالای کشور، ایده دانش بنیان سامانه هوشمند حمل بار را در قامت باروان پدید آوردند تا صاحبان کالا دغدغه حمل نداشته، رانندگان کامیون همواره به بار دسترسی داشته و بهره وری و خدمات شرکت های حمل و نقلی توسعه پیدا کند.
+
+        خاطر آسوده صاحب کالا، لبخند رضایت راننده و اعتماد شرکت حمل و نقلی ارزش های ماست. می کوشیم با تحقیق و توسعه در کنار تجربیات سازنده کیفیت خدمات باروان را بالا برده و چشم اندازی روشن و با ارزش برای صنعت حمل و نقل کالای کشور بسازیم و آن را در تراز جهانی ارائه کنیم.
+
+      </h4>
+      <h4 class="intro__text-ios">کاروان</h4>
     </div>
 
     <div class="outer">
@@ -13,42 +15,44 @@
         <div class="phone"></div>
       </div>
       <div class="text">
-        <h1>Redesigned widgets show more information on your home screen.</h1>
+        <h1>
+          رانندگان عزیز با پیوستن به سامانه هوشمند باروان، به بزرگترین سالن اعلام بار مجازی کشور دسترسی پیدا کنید، هزینه ها را کاهش و درآمد خود را بالا ببرید:
+        </h1>
 
-        <h1>The App Library automatically organizes apps.</h1>
+        <h1>
+          استعلام خلافی کامیون، عوارض جاده ای، حواله دولتی لاستیک کامیون و …
+        </h1>
 
-        <h1>Messages makes important conversations easy to access.</h1>
+        <h1>
+          باروان چیست؟
+          سامانه هوشمند حمل بار
+          باروان یک سامانه اعلام بار و حمل بار است. در این سامانه صاحب کالا به راحتی اعلام بار کرده و بار خود را در معرض دید و انتخاب هزاران راننده کامیون از سراسر کشور قرار می دهد
+        </h1>
 
-        <h1 class="text__last">App Clips help you handle tasks faster.</h1>
+        <h1 class="text__last">اپلیکیشن رانندگان باروان را از اینجا دانلـود و به سادگی ثبت نام کنید!</h1>
       </div>
     </div>
 
-    <!--   Social Connections -->
-    <div class="social-icons">
-      <a class="social-icon social-icon--codepen" href="https://codepen.io/braydoncoyer" target="_blank">
-        <i class="fa fa-codepen"></i>
-        <div class="tooltip">Codepen</div>
-      </a>
-      <a class="social-icon social-icon--twitter" href="https://twitter.com/BraydonCoyer" target="_blank">
-        <i class="fa fa-twitter"></i>
-        <div class="tooltip">Twitter</div>
-      </a>
-    </div>
+<div class="team">
 
-    <div class="mobile">
-      <div class="hardware"></div>
-      <div class="screen">
-        <div class="image-top"></div>
-        <ul class="downloads">
-          <li class="download">
-            <div class="download-show"></div>
-          </li>
-          <li class="download on on-1"></li>
-          <li class="download on on-2"></li>
-          <li class="download on on-3"></li>
-        </ul>
-      </div>
-    </div>
+  <div class="on" style="background: green">
+    TEST
+    <h1 style="color: black;">    TEST   TEST   TEST   TEST   TEST   TEST   TEST   TEST  TEST</h1>
+  </div>
+  <div class="on" style="background: red">
+    TEST
+    <h1 style="color: black;">    TEST   TEST   TEST   TEST   TEST   TEST   TEST   TEST  TEST</h1>
+  </div>
+  <div class="on" style="background: yellowgreen">
+    TEST
+    <h1 style="color: black;">    TEST   TEST   TEST   TEST   TEST   TEST   TEST   TEST  TEST</h1>
+  </div>
+  <div class="on" style="background: darkmagenta">
+    TEST
+    <h1 style="color: black;">    TEST   TEST   TEST   TEST   TEST   TEST   TEST   TEST  TEST</h1>
+  </div>
+
+</div>
   </div>
 </template>
 
@@ -60,19 +64,20 @@ export default {
     this.startAnimation()
   },
   methods: {
-    animate  (boxEls) {
+    animate(boxEls) {
+
+      console.log('>>>>>>>>>>')
       let tl = this.$gsap.timeline({
         scrollTrigger: {
           id: "box",
-          trigger: ".mobile",
-          toggleActions: "play puase resume pause",
-          start: "20%",
-          end: "60%",
-          // markers: true,
+          trigger: ".team",
+          toggleActions: "play pause resume pause",
+          start: "10%",
+          end: "50%",
+          markers: true,
           scrub: 0.25
         }
       });
-
       tl.from(boxEls, {
         opacity: 0,
         marginLeft: 0,
@@ -80,16 +85,16 @@ export default {
         stagger: 0.5
       });
     },
-    initEls  () {
-      return  document.querySelectorAll(".on");
+    initEls() {
+      return document.querySelectorAll(".on");
     },
-    init  () {
-      this.animate(   this.initEls() );
+    init() {
+      this.animate(this.initEls());
     },
     startAnimation() {
       this.$gsap.registerPlugin(ScrollTrigger);
       const textTitles = [...document.querySelectorAll("h1")];
-
+      console.log(textTitles)
       this.$gsap.timeline({
         scrollTrigger: {
           trigger: ".phone",
@@ -100,7 +105,6 @@ export default {
           pin: true
         }
       });
-
       textTitles.forEach((title, i) => {
         this.$gsap.to(title, {
           opacity: 1,
@@ -116,7 +120,23 @@ export default {
           }
         });
       });
-        this.init()
+
+      let tl2 = this.$gsap.timeline({
+        scrollTrigger: {
+          trigger: ".team",
+          toggleActions: "play pause resume pause",
+          scrub: 0.25
+        }
+      });
+
+      const boxEls =  document.querySelectorAll("on") ;
+      tl2.from(boxEls, {
+        opacity: 0,
+        marginLeft: 0,
+        transform: "scale(1.5)",
+        stagger: 0.5
+      });
+
     }
 
   }
