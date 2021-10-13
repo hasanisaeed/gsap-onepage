@@ -24,16 +24,16 @@
           ها را کاهش و درآمد خود را بالا ببرید:
         </h1>
 
-        <!--        <h1>-->
-        <!--          استعلام خلافی کامیون، عوارض جاده ای، حواله دولتی لاستیک کامیون و …-->
-        <!--        </h1>-->
+        <h1>
+          استعلام خلافی کامیون، عوارض جاده ای، حواله دولتی لاستیک کامیون و …
+        </h1>
 
-        <!--        <h1>-->
-        <!--          باروان چیست؟-->
-        <!--          سامانه هوشمند حمل بار-->
-        <!--          باروان یک سامانه اعلام بار و حمل بار است. در این سامانه صاحب کالا به راحتی اعلام بار کرده و بار خود را در معرض-->
-        <!--          دید و انتخاب هزاران راننده کامیون از سراسر کشور قرار می دهد-->
-        <!--        </h1>-->
+        <h1>
+          باروان چیست؟
+          سامانه هوشمند حمل بار
+          باروان یک سامانه اعلام بار و حمل بار است. در این سامانه صاحب کالا به راحتی اعلام بار کرده و بار خود را در معرض
+          دید و انتخاب هزاران راننده کامیون از سراسر کشور قرار می دهد
+        </h1>
 
         <h1 class="text__last">اپلیکیشن رانندگان باروان را از اینجا دانلـود و به سادگی ثبت نام کنید!</h1>
       </div>
@@ -45,14 +45,102 @@
         <div class="image-top"></div>
         <ul class="downloads">
           <li class="download">
-            <div class="download-show"></div>
+            <div class="download-show">
+
+            </div>
           </li>
-          <li class="download on on-1"></li>
+          <li class="download on on-1">
+            <div class="container">
+              <div class="logo"></div>
+              <h1> Saifuddin Syed </h1>
+              <h3> CSE Grad | Enthusiast </h3>
+              <p class="bio">
+                I think of myself as possessing a critical, dynamic and perpetual intelligence which I intend to allow it to operate.
+              </p>
+              <p class="social">
+                <a title="Facebook" target="_blank" href="https://www.facebook.com/100006665290943">
+                  <i class=" s-btn fab fa-facebook-f"></i></a>
+                <a title="Instagram" target="_blank" href="https://www.instagram.com/saifylovezyou">
+                  <i class="s-btn fab fa-instagram"></i></a>
+                <a title="Twitter" target="_blank" href="https://twitter.com/saifylovezyou">
+                  <i class="s-btn fab fa-twitter"></i></a>
+                <a title="Codepen" target="_blank" href="https://codepen.io/saify/">
+                  <i class="s-btn fab fa-codepen"></i></a>
+                <a title="Linkedin" target="_blank" href="https://www.linkedin.com/in/saifuddins/">
+                  <i class="s-btn fab fa-linkedin-in"></i></a>
+              </p>
+            </div>
+          </li>
           <li class="download on on-2"></li>
           <li class="download on on-3"></li>
         </ul>
       </div>
     </section>
+
+    <div class="cards">
+      <div class="outer">
+        <div class="card" style="--delay:-1;">
+          <div class="content">
+            <div class="img"><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAFIvBPH9fIMQZis4SHYTuv485uqr38bg1VQ&usqp=CAU">
+            </div>
+            <div class="details">
+              <span class="name">Iron Man</span>
+              <p>Frontend Developer</p>
+            </div>
+          </div>
+          <a href="#">Follow</a>
+        </div>
+        <div class="card" style="--delay:0;">
+          <div class="content">
+            <div class="img"><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIMYmBQyoz9BWjEiMi5XipSPOmhamZUyI1gQ&usqp=CAU"
+              alt=""></div>
+            <div class="details">
+              <span class="name">Spider Man</span>
+              <p>Full-stack Developer</p>
+            </div>
+          </div>
+          <a href="#">Follow</a>
+        </div>
+        <div class="card" style="--delay:1;">
+          <div class="content">
+            <div class="img"><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe2k6vsAWhq5UPsCW58Q2RSCKqPxMDq75wfg&usqp=CAU"
+              alt=""></div>
+            <div class="details">
+              <span class="name">Venom</span>
+              <p>Tester</p>
+            </div>
+          </div>
+          <a href="#">Follow</a>
+        </div>
+        <div class="card" style="--delay:2;">
+          <div class="content">
+            <div class="img"><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStwJX81iy7cnzgclyjTKlNnDlzIzPN1KSIgA&usqp=CAU"
+              alt=""></div>
+            <div class="details">
+              <span class="name">Batman</span>
+              <p>Backend Developer</p>
+            </div>
+          </div>
+          <a href="#">Follow</a>
+        </div>
+        <div class="card" style="--delay:2;">
+          <div class="content">
+            <div class="img"><img
+              src="https://static.rogerebert.com/uploads/review/primary_image/reviews/great-movie-superman-1978/EB20101104REVIEWS08101109987AR.jpg"
+              alt=""></div>
+            <div class="details">
+              <span class="name">Superman</span>
+              <p>Youtuber</p>
+            </div>
+          </div>
+          <a href="#">Follow</a>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -170,6 +258,7 @@ export default {
 </script>
 <style scoped>
 @import 'assets/style/main.css';
+
 .mobile {
   width: 770px;
   height: 1336px;
@@ -218,6 +307,7 @@ export default {
   width: 100%;
   height: 200px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .mobile .screen .downloads .download-show {
@@ -225,8 +315,7 @@ export default {
   height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(https://www.apple.com/v/iphone-12-pro/f/images/overview/5g/5g_show_04__dbzl203ndh2e_large.jpg);
-}
+ }
 
 .mobile .screen .downloads .on {
   opacity: 1;
@@ -239,22 +328,189 @@ export default {
   height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(https://www.apple.com/v/iphone-12-pro/f/images/overview/5g/5g_show_01__bf4l35s1jn1e_large.jpg);
-}
+ }
 
 .mobile .screen .downloads .on-2 {
   width: 730px;
   height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(https://www.apple.com/v/iphone-12-pro/f/images/overview/5g/5g_show_02__f7pxk2oyioeq_large.jpg);
-}
+ }
 
 .mobile .screen .downloads .on-3 {
   width: 730px;
   height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(https://www.apple.com/v/iphone-12-pro/f/images/overview/5g/5g_show_03__c8qgtrgvtno2_large.jpg);
+ }
+
+
+.cards .outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.cards .card {
+  background: #ffffff;
+  width: 430px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  justify-content: space-between;
+  border-radius: 100px 20px 20px 100px;
+  animation: animate 5s linear infinite;
+  animation-delay: calc(3s * var(--delay));
+}
+
+.outer:hover .card {
+  animation-play-state: paused;
+}
+
+.cards .card:last-child {
+  animation-delay: calc(-3s * var(--delay));
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(100%) scale(0.5);
+  }
+  5%,
+  20% {
+    opacity: 0.4;
+    transform: translateY(100%) scale(0.7);
+  }
+  25%,
+  40% {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0%) scale(1);
+  }
+  45%,
+  60% {
+    opacity: 0.4;
+    transform: translateY(-100%) scale(0.7);
+  }
+  65%,
+  100% {
+    opacity: 0;
+    transform: translateY(-100%) scale(0.5);
+  }
+}
+
+.card .content {
+  display: flex;
+  align-items: center;
+}
+
+.cards .card .img {
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  left: -5px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card .img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card .details {
+  margin-left: 80px;
+}
+
+.details span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.card a {
+  text-decoration: none;
+  padding: 7px 18px;
+  border-radius: 25px;
+  color: #fff;
+  background: linear-gradient(to bottom, #bea2e7 0%, #86b7e7 100%);
+  transition: all 0.3s ease;
+}
+
+.card a:hover {
+  transform: scale(0.94);
+}
+
+
+/********************************/
+
+.container {
+  /*position: absolute;*/
+  /*top: 20%;*/
+  /*left: 30%;*/
+  /*transform: translate(-50%, -50%);*/
+  width: 500px;
+  height: 200px;
+  padding: 30px;
+  background: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  width: 180px;
+  height: 180px;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url(https://res.cloudinary.com/saify/image/upload/v1539009756/icon.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle();
+  margin: 30px 20px 30px 0;
+  /*box-shadow: -2px 2px 400px #808080;*/
+  transform: translate(-70%, -10%);
+}
+
+h1 {
+  font-family: "Marck Script", san-serif;
+  transform: translateX(-85px);
+  margin: 0 0 5px;
+  padding: 0;
+  font-size: 30px;
+}
+
+h3 {
+  font-style: italic;
+  font-weight: 600;
+  transform: translateX(-85px);
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.bio {
+  transform: translateX(-95px);
+  font-family: "KoHo", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  line-height: 28px;
+}
+
+.social {
+  display: grid;
+  line-height: 2.5;
+  transform: translate(260px, -190px);
+  width: 40px;
+}
+
+.s-btn {
+  color: black;
+}
+
 </style>
