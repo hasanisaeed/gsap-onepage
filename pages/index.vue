@@ -53,41 +53,6 @@
         </ul>
       </div>
     </section>
-    <!--    <div id="main">-->
-    <!--      <section class="container">-->
-    <!--        <section class="elements">-->
-    <!--          <div class="box a">A</div>-->
-    <!--          <div class="box b">B</div>-->
-    <!--          <div class="box c">C</div>-->
-    <!--        </section>-->
-    <!--        <section class="text hidden">-->
-    <!--          <div class="t">Paragraph 1</div>-->
-    <!--          <div class="t">Paragraph 2</div>-->
-    <!--          <div class="t">Paragraph 3</div>-->
-    <!--          <div class="t">Paragraph 4</div>-->
-    <!--        </section>-->
-    <!--      </section>-->
-    <!--    </div>-->
-
-
-    <!--    <div class="team">-->
-    <!--      <div class="on" style="background: green;height:150px;">-->
-    <!--        TEST-->
-    <!--        <h1 style="color: black;"> TEST TEST TEST TEST TEST TEST TEST TEST TEST</h1>-->
-    <!--      </div>-->
-    <!--      <div class="on" style="background: red;height:150px;">-->
-    <!--        TEST-->
-    <!--        <h1 style="color: black;"> TEST TEST TEST TEST TEST TEST TEST TEST TEST</h1>-->
-    <!--      </div>-->
-    <!--      <div class="on" style="background: yellowgreen;height:150px;">-->
-    <!--        TEST-->
-    <!--        <h1 style="color: black;"> TEST TEST TEST TEST TEST TEST TEST TEST TEST</h1>-->
-    <!--      </div>-->
-    <!--      <div class="on" style="background: darkmagenta;height:150px;">-->
-    <!--        TEST-->
-    <!--        <h1 style="color: black;"> TEST TEST TEST TEST TEST TEST TEST TEST TEST</h1>-->
-    <!--      </div>-->
-    <!--    </div>-->
   </div>
 </template>
 
@@ -176,9 +141,6 @@ export default {
       });
 
 
-
-
-
       var boxEls = document.querySelectorAll(".on");
 
 
@@ -208,71 +170,6 @@ export default {
 </script>
 <style scoped>
 @import 'assets/style/main.css';
-/*@import '~/assets/style/team.css';*/
-
-#main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.void {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  font-size: 20px;
-  background: #333;
-}
-
-.container {
-  position: relative;
-  width: 100%;
-  /*   height: calc(100vh + 500px); */
-  background: #222;
-}
-
-.elements, .text {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.elements {
-  height: 100vh;
-  background: #f96723;
-}
-
-.text {
-  bottom: 0;
-  height: 500px;
-  background: #dc4a06;
-  border-top: 1px dotted red;
-}
-
-.box {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 100px;
-  background: #112f1d;
-}
-
-.our-team {
-  width: 100%;
-  background: yellowgreen;
-  margin-top: 50px;
-  text-align: center;
-}
-
 .mobile {
   width: 770px;
   height: 1336px;
@@ -287,7 +184,6 @@ export default {
   height: 1336px;
   background-size: 770px 1336px;
   background-repeat: no-repeat;
-  background-image: url(https://www.apple.com/v/iphone-12-pro/f/images/overview/5g/5g_on_phone__qxgc670fz2aa_large.jpg);
 }
 
 .mobile .screen {
@@ -305,7 +201,6 @@ export default {
   height: 200px;
   background-size: 650px 200px;
   background-repeat: no-repeat;
-  background-image: url(https://www.apple.com/v/iphone-12-pro/f/images/overview/5g/5g_top_ui__fh2pbo18aviq_large.jpg);
   position: relative;
   z-index: 3;
   margin: auto;

@@ -1,15 +1,33 @@
 @font-face {
-  font-family: SFPro;
-  src: url(https://assets.codepen.io/3522775/SF-Pro-Display-Regular.otf);
+  font-family: 'Vazir';
+  src: url('~assets/fonts/Vazir-Regular-FD.eot') format('eot'),
+  url('~assets/fonts/Vazir-Regular-FD.woff') format('woff'),
+  url('~assets/fonts/Vazir-Regular-FD.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'VazirMed';
+  src: url('~assets/fonts/Vazir-Medium-FD.eot') format('eot'),
+  url('~assets/fonts/Vazir-Medium-FD.woff') format('woff'),
+  url('~assets/fonts/Vazir-Medium-FD.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'VazirBold';
+  src: url('~assets/fonts/Vazir-Bold-FD.eot') format('eot'),
+  url('~assets/fonts/Vazir-Bold-FD.woff') format('woff'),
+  url('~assets/fonts/Vazir-Bold-FD.ttf') format('truetype');
+}
+
 * {
   padding: 0;
   margin: 0;
-  font-family: SFPro, "Helvetica Neue";
+  font-family: Vazir;
 }
 
 body {
-  background-color: #101010;
+  --tw-bg-opacity: 1;
+  background-color: rgba(1,42,53,var(--tw-bg-opacity));
 }
 
 .intro {
@@ -22,7 +40,7 @@ body {
 }
 .intro__text {
   margin: 0 auto;
-  width: 35%;
+  width: 85%;
   font-size: 30px;
   text-align: center;
 }
