@@ -12,10 +12,7 @@ $ yarn dev
 # build for production and launch server
 $ yarn build
 $ yarn start
-
-# generate static project
-$ yarn generate
-```
+ 
 
 ### Pens:
 [Card](https://codepen.io/saify/pen/WaReRg)
